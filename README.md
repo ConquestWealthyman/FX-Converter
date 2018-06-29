@@ -12,7 +12,8 @@ The API(s) below are very essential for an excellent user experience
 - Services Worker
 - Cache API
 - IndexedDB
+- Free Currency Converter API
 
-### PROJECT LINK ON GITHUB PAGE
+### Project link on Github Pages
 
 Follow this link [FX Converter](https://conquestwealthyman.github.io/FX-Converter).
