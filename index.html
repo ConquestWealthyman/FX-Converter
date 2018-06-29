@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Offline & Online Currency Converter">
+    <meta name="author" content="Samuel Ayangbola @WealthyMan on Slack">
+    <link rel="icon" type="icon/image" href="img/favicon.png">
+    <title>FX Converter - Currency Converter</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href='https://fonts.googleapis.com/css?family=-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"' rel='stylesheet'>
+</head>
+<body>
+    <!-- navigation section -->
+    <header>
+        <div class="navbar">
+          <div class="container d-flex justify-content-center">
+            
+            <h2 class="align-items-center" style="color:#FFFFFF;">
+              <strong>FX Converter</strong></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FFFFFF; font-size:14px;">
+              <b>Ver 1.0 by WealthyMan</b>
+            </span>
+            
+            
+          </div>
+        </div>
+    </header>
+	
+	<header>
+        <div class="navbar1">
+          <div class="container d-flex justify-content-center">
+            
+            
+            
+            
+          </div>
+        </div>
+    </header>
+
+    <!-- contents section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error_msg text-center"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="results"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="card-feel">
+                    <h1 class="lead text-center">Choose from the list of currencies</h1><br>
+                    <form method="post" onsubmit="return convertCurrency()">
+					
+                        <div class="from-group">
+                            <input  min="1" id="convert-amount" value="" class="form-control" placeholder="Enter Amount">
+                        
+						</div>
+                        <br />
+					
+                        <div class="from-group">
+                            <select class="form-control" id="convert-from"><option>From</option>
+							</select>
+							
+                        </div>
+                        <br />
+					
+                        <div class="from-group">
+						<select class="form-control" id="convert-to"><option>To</option></select>
+                        
+						</div>
+                        <br />
+
+                        <div class="from-group text-center">
+						
+                            <label for="convert-btn"></label>
+                            <button class="btn btn-primary btn-lg btn-block" id="convert-btn">Convert</button>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- notification section -->
+    <!-- alert notification -->
+    <div class="notify"></div>
+
+<br />
+<br />
+
+<footer class="footer">
+      <div class="container ">
+        <div id="footer-text">
+<span style="color:#ffffff;font-size:12px;">© 2018 ALCwithGoogle Udacity Scholarship Project. Currency Converter, All Right Reserved.<br><h3 style="color:#ffffff;">Created by @WealthyMan on Slack</h3></span>
+</div>
+      </div>
+</footer>
+
+
+    <!-- scripts section -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

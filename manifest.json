@@ -1,0 +1,13 @@
+{
+  "short_name": "FXConverter",
+  "name": "FXConverter",
+  "icons": [{
+    "src": "img/logo.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa;",
+  "theme_color": "#1565c0;"
+}
