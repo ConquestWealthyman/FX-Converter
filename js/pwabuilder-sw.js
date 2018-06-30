@@ -10,7 +10,6 @@ var preLoad = function(){
   return caches.open('pwabuilder-offline').then(function(cache) {
     console.log('[PWA Builder] Cached index and offline page during Install');
     return cache.addAll([
-  'FX-Converter/',
 	'index.html',
 	'css/index.css',
 	'js/index.js',
