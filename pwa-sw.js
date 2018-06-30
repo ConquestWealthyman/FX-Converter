@@ -23,7 +23,7 @@ var preLoad = function(){
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js',
-	'https://fonts.googleapis.com/css?family=Markazi+Text'
+	'https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Crete+Round|Hind+Siliguri|IBM+Plex+Sans+Condensed|Josefin+Sans|Kanit|Libre+Baskerville|Markazi+Text|Merriweather+Sans|Patua+One|Play|Poiret+One|Righteous|Signika|Source+Serif+Pro|Ubuntu+Condensed|Vollkorn'
     
     ]);
   });
@@ -76,7 +76,7 @@ var returnFromCache = function(request){
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js',   
-      	'https://fonts.googleapis.com/css?family=Markazi+Text')
+      	'https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa|Crete+Round|Hind+Siliguri|IBM+Plex+Sans+Condensed|Josefin+Sans|Kanit|Libre+Baskerville|Markazi+Text|Merriweather+Sans|Patua+One|Play|Poiret+One|Righteous|Signika|Source+Serif+Pro|Ubuntu+Condensed|Vollkorn')
      } else {
        return matching
      }
