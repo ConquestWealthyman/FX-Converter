@@ -2,6 +2,7 @@
 var appCacheName = 'FXConverter-static-v1';
 var appCacheAssets = [
 	'FX-Converter/',
+	'index.html',
 	'css/index.css',
 	'js/index.js',
 	'img/favicon.png',
