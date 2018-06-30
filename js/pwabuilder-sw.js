@@ -9,23 +9,7 @@ var preLoad = function(){
   console.log('[PWA Builder] Install Event processing');
   return caches.open('pwabuilder-offline').then(function(cache) {
     console.log('[PWA Builder] Cached index and offline page during Install');
-    return cache.addAll([
-  'FX-Converter/',
-	'index.html',
-	'css/index.css',
-	'js/index.js',
-	'img/favicon.png',
-	'img/logo.png',
-	'manifest.json',
-	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
-	'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',
-	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
-	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
-	'https://free.currencyconverterapi.com/api/v5/currencies',
-	'https://free.currencyconverterapi.com/api/v5/convert',
-	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js'
-      
-    ]);
+    return cache.addAll(['/offline.html', '/index.html']);
   });
 }
 
@@ -62,7 +46,7 @@ var returnFromCache = function(request){
   return caches.open('pwabuilder-offline').then(function (cache) {
     return cache.match(request).then(function (matching) {
      if(!matching || matching.status == 404) {
-       return cache.match('index.html')
+       return cache.match('offline.html')
      } else {
        return matching
      }
