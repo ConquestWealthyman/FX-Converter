@@ -26,7 +26,7 @@ if(navigator.serviceWorker){
 // register sw
 function registerServiceWorker() {
 	// register the service worker
-	navigator.serviceWorker.register('service-worker.js').then(function(sw) {
+	navigator.serviceWorker.register('pwabuilder-sw.js').then(function(sw) {
 		// check service worker controller
 		if(!navigator.serviceWorker.controller) return;
 
