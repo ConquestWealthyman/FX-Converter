@@ -23,7 +23,8 @@ var preLoad = function(){
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js',
-	'https://fonts.googleapis.com/css?family=Righteous'
+	'https://fonts.googleapis.com/css?family=Righteous',
+	'https://fonts.googleapis.com/icon?family=Material+Icons'
     
     ]);
   });
@@ -76,7 +77,8 @@ var returnFromCache = function(request){
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js',   
-      	'https://fonts.googleapis.com/css?family=Righteous')
+      	'https://fonts.googleapis.com/css?family=Righteous',
+       	'https://fonts.googleapis.com/icon?family=Material+Icons')
      } else {
        return matching
      }
