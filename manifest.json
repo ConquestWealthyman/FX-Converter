@@ -7,7 +7,7 @@
     "theme_color" : "#1565c0;",
     "lang" : "",
     "orientation" : "any",
-    "description" : "XE Converter is a web based (Progressive Web App) currency converter with online and offline experience.",
+    "description" : "FX Converter is a lightweight web based currency converter (Progressive Web App) which works online and offline.",
     "icons" : [
         {
             "src": "https://conquestwealthyman.github.io/FX-Converter/img/logo.png",
