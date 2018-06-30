@@ -21,7 +21,6 @@ var preLoad = function(){
 	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
-	'https://free.currencyconverterapi.com/api/v5/convert',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js'
     
     ]);
@@ -73,7 +72,6 @@ var returnFromCache = function(request){
 	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js',
 	'https://free.currencyconverterapi.com/api/v5/currencies',
-	'https://free.currencyconverterapi.com/api/v5/convert',
 	'https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js')
      } else {
        return matching
