@@ -9,68 +9,21 @@ $(document).ready(function (){
 SERVICE WORKER
 
 */
-// init page and register services worker
-if(navigator.serviceWorker){
-	// register the services worker
-	registerServiceWorker();
 
-	// listen for controller change
-	navigator.serviceWorker.addEventListener('controllerchange', function (){
-		window.location.reload();
-	});
+//This is the service worker with the combined offline experience (Offline page + Offline copy of pages)
 
-}else{
-	console.log('browser does not support Services Worker !');
+//Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
 }
-
-// register sw
-function registerServiceWorker() {
-	// register the service worker
-	navigator.serviceWorker.register('pwabuilder-sw.js').then(function(sw) {
-		// check service worker controller
-		if(!navigator.serviceWorker.controller) return;
-
-		// on waiting state
-		if(sw.waiting){
-			// updateIsReady(sw.waiting);
-			sw.postMessage('message', {action: 'skipWaiting'});
-			return;
-		}
-
-		// on installing state
-		if(sw.installing){
-			trackInstalling(sw.installing);
-		}
-
-		// on updated found
-		sw.addEventListener('updatefound', function (){
-			trackInstalling(sw.installing);
-		});
-	});
-}
-
-// track sw state
-function trackInstalling(worker) {
-	worker.addEventListener('statechange', function(){
-		if(worker.state == 'installed'){
-			updateIsReady(worker);
-		}
-	});
-}
-
-// update app 
-function updateIsReady(sw){
-	// console.log('a new SW is ready to take over !');
-	// sw.postMessage('message', {action: 'skipWaiting'});
-	pushUpdateFound();
-}
-
-// push updates
-function pushUpdateFound() {
-	$(".notify").fadeIn();
-  	console.log('sw found some updates.. !');
-}
-
 
 /*
 
