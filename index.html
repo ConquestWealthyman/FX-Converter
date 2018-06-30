@@ -17,14 +17,19 @@
     <!-- navigation section -->
     <header>
         <div class="navbar">
-          <div class="container d-flex justify-content-center">
+          <div class="container d-flex justify-content-between">
+            <a href="javascript:void(0);" class="nav-item">
+              <i class="material-icons">menu</i>
+            </a>
             
-            <h2 class="align-items-center" style="color:#FFFFFF;">
+            <h2 class="navbar-brand d-flex align-items-center">
               <strong>FX Converter</strong></h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FFFFFF; font-size:14px;">
               <b>Ver 1.0 by WealthyMan</b>
-            </span>
-            
-            
+	<span class="pull-right">
+              <a href="javascript:void(0);" onclick="refreshPage()" class="nav-item">
+                <i class="material-icons">refresh</i>
+              </a>
+            </span>           
           </div>
         </div>
     </header>
@@ -82,7 +87,7 @@
                         <div class="from-group text-center">
 						
                                 <button class="btn btn-primary btn-lg btn-block" id="convert-btn">
-				    <span class="glyphicon glyphicon-transfer"></span>Convert
+				    <i class="material-icons">swap_horiz</i> Convert
 				</button>
                         </div>
                         <br />
