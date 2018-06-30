@@ -20,13 +20,8 @@ header .navbar1 {
 	padding: 0.5em;
 }
 
-#header-btn-icon {
+#material-icon-btn {
   color: #ffffff;
-}
-
-#converter-btn-icon {
-   line-height: 60px;
-   color: #ffffff;
 }
 
 #footer-text {
