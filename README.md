@@ -7,7 +7,7 @@ Specify the amount you'd like to convert, then select the currency you'd like to
 The result will appear above the form.
 
 ### API in use
-The API(s) below are very essential for a lie-fie free offline user experience
+The API(s) below are very essential for a lie-fie (Poor connectivity) free user experience
 
 - Services Worker
 - Cache API
