@@ -20,22 +20,16 @@ header .navbar1 {
 	padding: 0.5em;
 }
 
-#header-btn-icon
-
-{
+#header-btn-icon {
   color: #ffffff;
 }
 
-#converter-btn-icon
-
-{
-   padding: 0;
-   margin-top: 20px;
+#converter-btn-icon {
+   padding: 10px;
    color: #ffffff;
 }
 
-#footer-text 
-{
+#footer-text {
    background-color: transparent;
    background-image: none;
    border: 0px #000000 solid;
