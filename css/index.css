@@ -39,7 +39,7 @@ hr {
    -webkit-align-self: auto;
    align-self: auto;
    padding: 0;
-   margin-top: 50px;
+   margin-top: 40px;
    text-align: center;
 }
 .footer {
@@ -47,7 +47,9 @@ hr {
   bottom: auto;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 40%;
+  height: 60%;
+  padding-top:20px;
+  padding-bottom:20px;
   background-color: #1565c0;
 }
 
