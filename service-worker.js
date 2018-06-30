@@ -1,11 +1,11 @@
 // register cache name
 var appCacheName = 'FXConverter-static-v1';
 var appCacheAssets = [
-	'css/index.css',
-	'js/index.js',
-	'img/favicon.png',
-	'img/logo.png',
-	'manifest.json',
+	'https://conquestwealthyman.github.io/FX-Converter/css/index.css',
+	'https://conquestwealthyman.github.io/FX-Converter/js/index.js',
+	'https://conquestwealthyman.github.io/FX-Converter/img/favicon.png',
+	'https://conquestwealthyman.github.io/FX-Converter/img/logo.png',
+	'https://conquestwealthyman.github.io/FX-Converter/manifest.json',
 	'https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
 	'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js',
 	'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js',
