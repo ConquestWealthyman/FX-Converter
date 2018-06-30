@@ -7,7 +7,7 @@ self.addEventListener('install', function(event) {
 
 var preLoad = function(){
   console.log('[FX-Converter] Install Event processing');
-  return caches.open('pwabuilder-offline').then(function(cache) {
+  return caches.open('fx-converter-offline').then(function(cache) {
     console.log('[FX-Converter] Cached index and offline page during Install');
     return cache.addAll([
 	'index.html',
@@ -48,7 +48,7 @@ var checkResponse = function(request){
 };
 
 var addToCache = function(request){
-  return caches.open('pwabuilder-offline').then(function (cache) {
+  return caches.open('fx-converter-offline').then(function (cache) {
     return fetch(request).then(function (response) {
       console.log('[FX-Converter] add page to offline'+response.url)
       return cache.put(request, response);
@@ -57,7 +57,7 @@ var addToCache = function(request){
 };
 
 var returnFromCache = function(request){
-  return caches.open('pwabuilder-offline').then(function (cache) {
+  return caches.open('fx-converter-offline').then(function (cache) {
     return cache.match(request).then(function (matching) {
      if(!matching || matching.status == 404) {
        return cache.match(
