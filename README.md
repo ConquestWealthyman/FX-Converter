@@ -1,11 +1,11 @@
 
-# Andela Learning Community (ALC) #7DaysofCodeChallenge - Google Africa Scholarship Program
+## Andela Learning Community (ALC) #7DaysofCodeChallenge - Google Africa Scholarship Program
 Mobile Web Specialist Track
 
-## Project Name
+### Project Name
 FX Converter - Currency Converter 
 
-## About FX Converter
+### About FX Converter
 FX Converter is a lightweight web based currency converter (Progressive Web App) that works online and offline.
 
 ### User Guide
