@@ -64,7 +64,7 @@ var returnFromCache = function(request){
      if(!matching || matching.status == 404) {
        return cache.match(
 	'FX-Converter/',
-  'index.html',
+        'index.html',
 	'css/index.css',
 	'js/index.js',
 	'img/favicon.png',
