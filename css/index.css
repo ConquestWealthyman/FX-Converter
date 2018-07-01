@@ -53,5 +53,9 @@ hr {
   background-color: #1565c0;
 }
 
+.social {
+    display: inline-block;
+    padding: 5px;
+}
 
 
