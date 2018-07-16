@@ -25,4 +25,4 @@ The API(s) below are very essential for a lie-fie (Poor connectivity) free user 
 Follow this link [FX Converter](https://conquestwealthyman.github.io/FX-Converter).
 
 ### Bonus
-Download installable APK for Android devices [FX Converter - Android App](https://conquestwealthyman.github.io/FX-Converter/FXConverter_V1.apk)
+Download installable APK for Android devices [FX Converter - Android App](https://github.com/ConquestWealthyman/FX-Converter/releases/download/v1.0/FXConverter_V1.apk)
